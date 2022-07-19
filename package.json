@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/theProgrammingBox/WebNovelToYoutube/issues"
   },
-  "homepage": "https://github.com/theProgrammingBox/WebNovelToYoutube#readme"
+  "homepage": "https://github.com/theProgrammingBox/WebNovelToYoutube#readme",
+  "dependencies": {
+    "puppeteer": "^15.4.0"
+  }
 }
