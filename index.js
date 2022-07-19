@@ -40,7 +40,7 @@ async function getChapter(chpt) {
             getChapter(chpt + numberOfProcesses);
           })
           .on("error", function (err) {
-            console.log("an error happened: " + err.message);
+            throw new Error(err);
           });
       }
     );
