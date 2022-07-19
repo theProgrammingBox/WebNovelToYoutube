@@ -32,6 +32,7 @@ async function getChapter(chpt) {
         }
         let command = ffmpeg()
           .setFfmpegPath(process.env.FFMPEG_PATH)
+          .loop(1)
           .addInput(process.env.IMAGE_PATH)
           .addInput(`./mp3/${process.env.NOVEL_NAME} chapter ${chpt}.mp3`)
           .save(`./mp4/${process.env.NOVEL_NAME} chapter ${chpt}.mp4`)
