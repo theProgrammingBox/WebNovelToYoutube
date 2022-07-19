@@ -18,6 +18,7 @@
   "homepage": "https://github.com/theProgrammingBox/WebNovelToYoutube#readme",
   "dependencies": {
     "dotenv": "^16.0.1",
+    "fluent-ffmpeg": "^2.1.2",
     "puppeteer": "^15.4.0"
   }
 }
