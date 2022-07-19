@@ -1,7 +1,6 @@
 {
   "name": "webnoveltoyoutube",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,9 +17,12 @@
   "homepage": "https://github.com/theProgrammingBox/WebNovelToYoutube#readme",
   "dependencies": {
     "dotenv": "^16.0.1",
+    "ffcreatorlite": "^2.3.9",
     "fluent-ffmpeg": "^2.1.2",
+    "get-mp3-duration": "^1.0.0",
     "gtts": "^0.2.1",
     "puppeteer": "^15.4.0",
     "videoshow": "^0.1.12"
-  }
+  },
+  "description": ""
 }

@@ -1,0 +1,42 @@
+npm clone to what ever folder you want
+in a terminal with this project path,
+npm init -y
+npm i puppeteer
+npm i dotenv
+npm install gtts
+npm install get-mp3-duration
+
+make a mp3, mp4, and image folder in the project folder
+make a .env file as well
+
+get an image for your video and put in in your image folder(preparation for line 26)
+
+Download ffmpeg to convert mp3 and image to mp4
+Tutorial: https://www.youtube.com/watch?v=IECI72XEox0&ab_channel=TroubleChute
+Once you finish the tutorial and have the path to the ffmpeg exe files(windows),
+If running ffmpeg in your terminal doesnt do what the tutorial does, just paste the path on both
+user and system variables.
+
+Make the .env look like this with your own novel url details:
+NOVEL_URL = https://someNovel.com/somePath/chapter-
+MAX_CHAPTERS = Some number like 100, based on the Novel you are looking for
+NOVEL_NAME = your novel name
+FFMPEG_PATH = C:\Users\SomeUser\Desktop\SomePath\ffmpeg\ffmpeg.exe
+or (choose one based on your custom ffmpeg path)
+FFMPEG_PATH = C:\PATH_Programs\ffmpeg.exe (if you used the tutorial)
+IMAGE_PATH = ./image/SomeImage.png or .jpg or idk, try out what works for you
+
+if fluent-ffmpeg shows an error, npm i fluent-ffmpeg
+
+in line 20 of index.js, use a class id or html path
+Tutorial: https://www.youtube.com/watch?v=lgyszZhAZOI&ab_channel=LearnWebCode
+Timestep: 10:00 - 11:30
+
+everything should be running now.
+expect to see:
+Starting...
+1 / someNumber
+2 / someNumber
+... etc
+It will finish once its
+someNumber / someNumber
