@@ -38,7 +38,6 @@ async function getChapter(chpt) {
         .on("end", function () {
           fs.unlink(mp3Name, (err) => {
             if (err) { throw err; }
-            // console.log(`${mp3Name} deleted`);
           });
           console.log(`${++chaptersDone} / ${maxChapters}`);
           getChapter(chpt + numberOfProcesses);
