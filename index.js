@@ -5,8 +5,8 @@ var ffmpeg = require("fluent-ffmpeg");
 const getMP3Duration = require('get-mp3-duration')
 const fs = require('fs');
 
-const numberOfProcesses = 1; //10;
-const maxChapters = 1; //process.env.MAX_CHAPTERS;
+const numberOfProcesses = 10;
+const maxChapters = process.env.MAX_CHAPTERS;
 var chaptersDone = 0;
 
 async function getChapter(chpt) {
